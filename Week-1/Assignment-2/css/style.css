@@ -87,10 +87,10 @@ ul,
 
 /* 試試看用hover active創造btn效果 */
 
-.menu_btn:hover{
+/* .menu_btn:hover{
     background: white url();
 
-}
+} */
 .no{
     display: none;
     position: absolute;

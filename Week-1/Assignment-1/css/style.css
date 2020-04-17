@@ -1,0 +1,161 @@
+* {
+    font-family: "Oswald", 微軟正黑體;
+    /* border: 1px solid black; */
+    /*測試用*/
+    box-sizing: border-box;
+    /* 讓每個bolck都佔滿全部 不要溢出來 */
+  }
+
+html{
+    height: 100%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+header{
+    margin-top: 5px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: red;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+a:link ,:visited{
+    color:#08588f;;
+}
+a:active{
+    color: #150f06;
+}
+/* 自己加一個置中的class */
+.text_center{
+    text-align: center;
+}
+/* nav{
+    justify-content: space-between;
+}  */
+.logo{
+    padding: 5px;
+    padding-left: 10px;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 1.25em;
+
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul,
+.nav_items{
+    text-align: center;
+    justify-content: space-around;
+    padding: 5px;
+    vertical-align: center;
+
+    display: none  ;
+}
+.item{
+    text-align: center;
+    margin-right: 2px ;
+    padding: 0 15px;
+    border: 0.5px solid #3fb3d5;;
+    border-radius: 5px;
+    flex: 1;
+    display: block;
+    display: none;
+    
+}
+.menu_btn{
+    display: block;
+        /* padding: 0 10px; */
+    padding-right: 40px;
+    color: transparent;
+    background: url(../open-menu.svg) no-repeat center ;
+
+}
+
+/* 試試看用hover active創造btn效果 */
+
+.menu_btn:hover{
+    background: white url();
+
+}
+.no{
+    display: none;
+    position: absolute;
+    right: 0px;
+    top:2.3em;
+    padding: 0;
+    color: white;
+}
+.it{
+    color:white;
+    border: solid 0.5px white;
+}
+
+.menu_btn:hover .no{
+    display: block;
+}
+
+/* Welcome message banner */
+.banner {
+	color: #fff;
+	background: #3fb3d5;
+	padding: 2% 0;
+}
+
+.black{
+    color: black;
+    display: no
+}
+
+
+.heading{
+    font-size: 2em;
+    
+}
+/* section */
+
+section{
+    text-align: center;
+    color:#3fb3d5;
+}
+
+/* section-shop */
+/* 先改成column 之後再改回來 */
+/* .section_shop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+} */
+
+/* section-shop */
+
+.content img{
+    width: 100%;
+    height: auto;
+    padding: 0 3% 3% 3%;
+}
+/* Call action */
+
+.call {
+    background-color:#3fb3d5;
+    color:  #fff;
+    display: inline-block;
+    border-radius: 3px;
+    padding:  15px 30px;
+    font-size: 20px;
+    margin: 20px;
+    
+}

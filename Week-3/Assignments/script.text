@@ -1,0 +1,49 @@
+草稿
+
+
+---- prepare
+
+Assignment 1: Your First Web Server
+
+1. instal node
+2. VPM manage
+3. require and install Express
+// 4. Write a simple web server program and start it
+    ex. 
+5. port 3000
+
+* ignore folder node_modules 記得
+
+＊ All the assignments in this week should continue with the same Node.js project built
+in this assignment.     都不用像layout那樣分頁嗎 
+
+Assignment 2: Build Backend API for Front-End
+
+1. app.get('/getData')
+2. use query param 
+3. if else statement
+
+Assignment 3: Connect to Backend API by AJAX
+
+1. set serve static files
+2. HTML file ( sum.html) 
+3. in this type in input and query could use AJAX
+
+
+Assignment 4: HTTP Cookie
+1. require cookie parser 
+2. notice that /trackName?name=使⽤者的輸入,
+3. Redirect ---->>> Done
+
+
+ 
+
+
+
+---- plan
+1. install build express envirnment
+2. build all the folder i need 
+3. create the file 
+
+
+---- perform

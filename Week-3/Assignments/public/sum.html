@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 中文編碼 -->
+        <meta charset="UTF-8">
+        <!-- title /名稱 -->
+        <title>Inch's week3 assignments</title>
+        <!-- connect to css file /連結css 網頁寫入 js link在後 -->
+        <!-- <link rel='stylesheet' href="./css/style.css"> -->
+       
+        
+        
+    </head>
+    <body>
+        <header>   
+                <h1 class="welcome">sup!!</h1>
+        </header>
+      
+        <section>
+            <div class="box">
+                <label for="v_input"> 1+2+...+ what you type in !</label>
+                     <input type="text" name="cal_input" id ="v_input" placeholder="請輸入正整數"> 
+                <button type="submit" id="button" onclick="sendAJAX()">submit</button>  
+                <div class="show" style="display: none;">
+                    <h3>您輸入的是：</h3> <span id="show_input">333</span> 
+                    <h3>答案是:</h3> <span id="show_result">333</span>
+
+                </div>
+
+            </div>
+           
+        </section>
+        
+
+<!-- javascript 放這裡 -->
+    <script>
+        // Assignment 3: Connect to Backend API by AJAX
+        
+        let v_input = document.querySelector("#v_input");
+        let show_result = document.querySelector('#show_result');
+        let show_input = document.querySelector('#show_input')
+        
+        
+        function sendAJAX(){
+            var cal = new XMLHttpRequest();
+            cal.onreadystatechange =function(){
+                if(cal.readyState === 4 ){
+                
+                let show_text = cal.responseText
+                console.log(show_text);
+                console.log("test");
+                console.log(vistor_input);
+    
+                document.querySelector('.show').style.display="block";
+                show_input.innerHTML= vistor_input;
+                show_result.innerHTML= cal.responseText;
+                 }
+                };
+                let vistor_input = v_input.value;
+                cal.open('GET',`http://localhost:3000/getData?number=${vistor_input}`,true);
+                cal.send()    
+                v_input.value = '';
+            
+         
+        }
+        
+
+    </script>
+
+
+
+    </body>
+
+
+</html>
+<link>
+

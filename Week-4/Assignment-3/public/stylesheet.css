@@ -1,0 +1,21 @@
+* {
+    font-family: "Oswald", 微軟正黑體;
+    /* border: 1px solid black; */
+    /*測試用*/
+    box-sizing: border-box;
+    /* 讓每個bolck都佔滿全部 不要溢出來 */
+  }
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: center;
+}
+
+.sign{
+    border: solid 1px black;
+    vertical-align: center;
+
+    margin-top: 100px;
+}

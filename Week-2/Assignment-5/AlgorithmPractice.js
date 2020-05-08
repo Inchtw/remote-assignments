@@ -29,6 +29,27 @@ function binarySearchPosition(numbers, target) {
     }
 
 
+function binarySearchPosition2(numbers, target) {
+        let left = 0;
+        let right = numbers.length - 1;
+      
+        while (left <= right) {
+          let mid = parseInt((left + right) / 2);
+          if (target === numbers[mid]) {
+            return mid;
+          } else if (target > numbers[mid]) {
+            left = mid + 1;
+          } else if (target < numbers[mid]) {
+            right = mid - 1;
+          }
+        }
+      
+        return -1;
+      
+      }
+
+
     
     console.log( binarySearchPosition([1, 2, 5, 6, 7], 1) ); // should print 0
     console.log( binarySearchPosition([1, 2, 5, 6, 7], 6) ); // should print 3
+    console.log( binarySearchPosition2([1, 2, 5, 6, 7, 9], 5) ); // should print 2
